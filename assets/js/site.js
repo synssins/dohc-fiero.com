@@ -1,4 +1,4 @@
-// Day/night switch. No stored choice: follow the system setting.
+// Day/night switch. Until one is clicked the page follows the system setting; a click is stored.
 (function () {
   var root = document.documentElement;
   var buttons = document.querySelectorAll('.theme button');
