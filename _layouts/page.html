@@ -7,7 +7,7 @@ layout: base
 {% if page.hub %}
 <h2>All pages in this section</h2>
 <ul>
-{% assign ps = site.pages | where: "section", page.section | sort: "title" %}{% for p in ps %}{% unless p.url == page.url %}<li><a href="{{ p.url | replace: ' ', '%20' }}">{{ p.title }}</a></li>
+{% assign ps = site.pages | where: "section", page.section | sort: "title" %}{% for p in ps %}{% unless p.hub %}<li><a href="{{ p.url | replace: ' ', '%20' }}">{{ p.title }}</a></li>
 {% endunless %}{% endfor %}</ul>
 {% endif %}
 {% if page.updated %}<p class="meta">Last updated {{ page.updated }}</p>{% endif %}

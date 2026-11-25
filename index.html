@@ -16,8 +16,8 @@ home: true
 <h2>All pages</h2>
 <div class="cols">
 {% for s in site.data.sections %}<div class="s-{{ s.key }}"><h3 id="{{ s.key }}">{{ s.name }}</h3><ul>
-{% assign ps = site.pages | where: "section", s.key | sort: "title" %}{% for p in ps %}<li><a href="{{ p.url | replace: ' ', '%20' }}">{{ p.title }}</a></li>
-{% endfor %}</ul></div>
+{% assign ps = site.pages | where: "section", s.key | sort: "title" %}{% for p in ps %}{% unless p.hub %}<li><a href="{{ p.url | replace: ' ', '%20' }}">{{ p.title }}</a></li>
+{% endunless %}{% endfor %}</ul></div>
 {% endfor %}</div>
 <div class="two prose">
 <div>
