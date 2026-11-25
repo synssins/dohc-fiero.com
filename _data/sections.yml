@@ -1,0 +1,27 @@
+- key: engine
+  name: Engine
+  hub: /mounting.htm
+  desc: Mounting, engine specs, heads, cams and carriers
+- key: elec
+  name: Electrical
+  hub: /electrical.htm
+  desc: ECM connectors A to D, factory ECU, Haltech E6K
+  tracer: elec
+- key: cool
+  name: Cooling
+  hub: /cooling.htm
+  desc: "'96 cooling system"
+- key: trans
+  name: Transmissions
+  hub: /transmissions.htm
+  desc: 5 speed Getrag, 4T60E install and gearing
+  tracer: trans
+- key: tune
+  name: Tuning
+  hub: /tuning.htm
+  desc: Timing belt, cams and timing, dyno days
+- key: tips
+  name: Tips and tricks
+  hub: /tips.htm
+  desc: DIY electronics, turbocharging, audio
+  tracer: tips

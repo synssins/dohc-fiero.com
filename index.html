@@ -1,0 +1,35 @@
+---
+layout: default
+home: true
+---
+<div class="intro">
+<div>
+<h1>Fiero information and how-tos</h1>
+<p class="lede">Specifications, wiring pinouts and step-by-step procedures for the Pontiac Fiero, written by owners who did the work.</p>
+</div>
+<aside class="s-elec">
+<p class="label" style="margin-bottom:10px"><a href="/ECM%20Connector%20A.htm">ECM connector "A" (orange)</a></p>
+<div class="face small">{% include connector-a-face.html %}</div>
+<p class="meta">'91–'93 VIN X 3.4 TDC. A1 IAC "A" High, CKT 441, Lt. Blue/White.</p>
+</aside>
+</div>
+<h2>All pages</h2>
+<div class="cols">
+{% for s in site.data.sections %}<div class="s-{{ s.key }}"><h3 id="{{ s.key }}">{{ s.name }}</h3><ul>
+{% assign ps = site.pages | where: "section", s.key | sort: "title" %}{% for p in ps %}<li><a href="{{ p.url | replace: ' ', '%20' }}">{{ p.title }}</a></li>
+{% endfor %}</ul></div>
+{% endfor %}</div>
+<div class="two prose">
+<div>
+<h2>About this site</h2>
+<p>We are simply a group of people that have assembled with a common interest in mind, the high-revving 3.4 TDC/DOHC GM motor installed into the midengine Fiero. Every vehicle is different and this site is meant to be a central gathering place of the information.</p>
+<p>The site was started in 2003 by Bob Neumann (85frankenstein) and DreXter from Pennock's. David restored it in 2008 and again in 2014.</p>
+<p><a href="/about.htm">About us</a></p>
+</div>
+<div>
+<h2>Become a contributing author</h2>
+<p>Do you have information that we have yet to publish? Is it well documented? Are there photographs of the procedures you outline? Please submit your article for the archives. Only original write-ups please; reprinted material is annotated and credited to its author.</p>
+<p><a href="mailto:webmaster@dohcfiero.com">webmaster@dohcfiero.com</a></p>
+<div class="note"><b>Notice</b>This site is for information only. Only you know your limits of skills and knowledge and therefore, only you can be responsible for what you do to your car.</div>
+</div>
+</div>
