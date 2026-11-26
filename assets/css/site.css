@@ -89,11 +89,11 @@ main{padding-block:clamp(32px,5vw,56px) 72px}
 .two{display:grid;grid-template-columns:1fr 1fr;gap:0 clamp(32px,5vw,72px)}
 
 /* Connector face */
-.face{display:grid;grid-template-columns:repeat(var(--n,12),1fr);gap:4px;padding:10px;border:3px solid var(--ink);border-radius:8px;background:color-mix(in srgb,var(--body,var(--w-engine)) 22%,var(--bg))}
-.face a,.face span{font:700 .8rem/1 var(--cond);text-align:center;padding:9px 0;border:2px solid var(--ink);background:var(--bg);text-decoration:none;min-width:0}
+.face{display:grid;grid-template-columns:repeat(12,1fr);gap:4px;padding:10px;border:3px solid var(--ink);border-radius:8px;background:color-mix(in srgb,var(--body,var(--w-engine)) 22%,var(--bg))}
+.face :nth-child(7),.face :nth-child(18){grid-column:2/span 2}
+.face a,.face span{grid-column:span 2;font:700 .8rem/1 var(--cond);text-align:center;padding:9px 0;border:2px solid var(--ink);background:var(--bg);text-decoration:none;min-width:0}
 .face span{color:var(--ink2);background:repeating-linear-gradient(45deg,var(--bg) 0 5px,var(--hair) 5px 7px)}
 .face a:hover,.face a.hot{background:var(--ink);color:var(--bg)}
-.face.small{grid-template-columns:repeat(6,1fr)}
 .face.sticky{position:sticky;top:8px;z-index:2;max-width:720px}
 .face.small a,.face.small span{font-size:.95rem;padding:11px 0}
 
@@ -159,7 +159,6 @@ footer span:first-child{margin-right:auto}
   .steps li{grid-template-columns:52px minmax(0,1fr)}
   .steps li::before{left:15px}.steps .n{width:36px;height:36px;line-height:30px;font-size:1rem}
   .figs{grid-column:2;margin-top:8px}
-  .face{grid-template-columns:repeat(6,1fr)}
   .face a,.face span{font-size:.95rem;padding:11px 0}
   .face.sticky{gap:2px;padding:6px}.face.sticky a,.face.sticky span{font-size:.8rem;padding:6px 0;border-width:1px}
   .title{gap:10px}.theme svg{display:none}.theme button{padding:9px 10px}
